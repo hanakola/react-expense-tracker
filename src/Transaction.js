@@ -14,7 +14,7 @@ export default function Transaction({ transaction }) {
     <div className="Transation">
       <li className={transaction.amount < 0 ? "minus" : "plus"}>
         {" "}
-        {transaction.text} {sign}£{Math.abs(transaction.amount)}
+        {transaction.text} {sign}£{Math.abs(transaction.amount)}{" "}
         <button onClick={deleteButton} className="delete-button">
           &times;
         </button>

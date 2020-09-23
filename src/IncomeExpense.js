@@ -20,11 +20,11 @@ export default function IncomeExpense() {
     <div className="IncomeExpense">
       <div className="income">
         <h4>Income</h4>
-        <p className="money-plus">{income}</p>
+        <p className="money-plus">£{income}</p>
       </div>
       <div className="expense">
         <h4>Expense</h4>
-        <p className="money-minus">{expense}</p>
+        <p className="money-minus">£{expense}</p>
       </div>
     </div>
   );

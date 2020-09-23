@@ -40,6 +40,7 @@ export default function AddTransaction() {
           placeholder="Enter text..."
         />
         <br />
+        <br />
         Amount
         <br />
         (negative - expense, positive - income)
@@ -51,7 +52,7 @@ export default function AddTransaction() {
           placeholder="Enter amount..."
         />
         <br />
-        <button className="add-transaction">Add transaction</button>
+        <button className="add-transaction-button">Add transaction</button>
       </form>
     </div>
   );
