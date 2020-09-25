@@ -11,7 +11,7 @@ export default function Transaction({ transaction }) {
   }
 
   return (
-    <div className="Transation">
+    <div className="Transaction">
       <li className={transaction.amount < 0 ? "minus" : "plus"}>
         {" "}
         {transaction.text} {sign}£{Math.abs(transaction.amount)}{" "}

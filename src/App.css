@@ -8,6 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  color: black;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -15,13 +16,9 @@ body {
   justify-content: center;
   margin: 20px auto;
   padding: 10px;
-  background: rgb(105, 136, 167);
+  background: rgb(151, 198, 240);
   border: 1px solid black;
   border-radius: 10px;
-}
-h1,
-h3 {
-  color: white;
 }
 .Balance {
   text-align: center;
@@ -40,48 +37,47 @@ h3 {
   border: none;
   border-radius: 10px;
 }
-.income {
+.IncomeExpense .income {
   border-right: 1px solid black;
 }
-.income,
+.IncomeExpense .income,
 .expense {
   flex: 1;
   text-align: center;
   background: white;
 }
-.money-plus,
+.IncomeExpense .money-plus,
 .money-minus {
   font-weight: 700;
 }
-.money-plus {
+.IncomeExpense .money-plus {
   color: green;
 }
-.money-minus {
+.IncomeExpense .money-minus {
   color: red;
 }
 .TransactionList ul {
   padding: 0;
   list-style: none;
-  background: white;
+  background: rgb(151, 198, 240);
 }
 .Transaction li {
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   padding: 3px 10px;
-  border-radius: 4px;
   margin-bottom: 6px;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.Transaction li .plus {
-  border-right: 1px solid green;
+.Transaction li.plus {
+  border-right: 8px solid green;
 }
-.Transaction li .minus {
-  border-right: 1px solid red;
+.Transaction li.minus {
+  border-right: 8px solid red;
 }
-.delete-button {
+.Transaction .delete-button {
   background: red;
   color: white;
   border: none;
@@ -92,27 +88,27 @@ h3 {
   opacity: 0.5;
   transition: all 100ms ease-in-out;
 }
-.delete-button:hover {
+.Transaction .delete-button:hover {
   opacity: 1;
 }
 .AddTransaction form {
   font-weight: 700;
-  color: white;
 }
 .AddTransaction input {
   width: 100%;
 }
-.add-transaction-button {
+.AddTransaction .add-transaction-button {
   background: rgb(22, 43, 100);
   color: white;
   padding: 10px 15px;
-  margin: 5px;
+  margin: 15px auto;
+  width: 100%;
   border: 1px solid rgb(22, 43, 100);
   border-radius: 4px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
-.add-transaction-button:hover {
+.AddTransaction .add-transaction-button:hover {
   background: white;
   color: rgb(22, 43, 100);
   border: 1px solid rgb(22, 43, 100);
